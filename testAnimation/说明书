@@ -1,0 +1,33 @@
+//可以使用
+https://github.com/yuwind/HHTransition
+
+
+1.简单说明
+
+UIKit直接将动画集成到UIView类中，当内部的一些属性发生改变时，UIView将为这些改变提供动画支持
+
+执行动画所需要的工作由UIView类自动完成，但仍要在希望执行动画时通知视图，为此需要将改变属性的代码放在[UIView beginAnimations:nil context:nil]和[UIView commitAnimations]之间
+
+常见方法解析:
++ (void)setAnimationDelegate:(id)delegate     设置动画代理对象，当动画开始或者结束时会发消息给代理对象
++ (void)setAnimationWillStartSelector:(SEL)selector   当动画即将开始时，执行delegate对象的selector，并且把beginAnimations:context:中传入的参数传进selector
++ (void)setAnimationDidStopSelector:(SEL)selector  当动画结束时，执行delegate对象的selector，并且把beginAnimations:context:中传入的参数传进selector
+
++ (void)setAnimationDuration:(NSTimeInterval)duration   动画的持续时间，秒为单位
+
++ (void)setAnimationDelay:(NSTimeInterval)delay  动画延迟delay秒后再开始
+
++ (void)setAnimationStartDate:(NSDate *)startDate   动画的开始时间，默认为now
+
++ (void)setAnimationCurve:(UIViewAnimationCurve)curve  动画的节奏控制
+
++ (void)setAnimationRepeatCount:(float)repeatCount  动画的重复次数
+
++ (void)setAnimationRepeatAutoreverses:(BOOL)repeatAutoreverses  如果设置为YES,代表动画每次重复执行的效果会跟上一次相反
+
++ (void)setAnimationTransition:(UIViewAnimationTransition)transition forView:(UIView *)view cache:(BOOL)cache  设置视图view的过渡效果, transition指定过渡类型, cache设置YES代表使用视图缓存，性能较好
+
+
+
+
+

@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
-
+#import "UIViewController+Extend.h"
+@interface ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@property(nonatomic,strong) UITableView *tableView;
+@property(nonatomic,strong) NSMutableArray *dataSource;
 
 @end
 

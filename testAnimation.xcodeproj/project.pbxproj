@@ -15,6 +15,10 @@
 		84CD12BD21D5C37B002723EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD12BC21D5C37B002723EA /* main.m */; };
 		84CD12C721D5C37B002723EA /* testAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD12C621D5C37B002723EA /* testAnimationTests.m */; };
 		84CD12D221D5C37B002723EA /* testAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD12D121D5C37B002723EA /* testAnimationUITests.m */; };
+		84CD12E121D5C418002723EA /* UIViewController+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD12DF21D5C418002723EA /* UIViewController+Extend.m */; };
+		84CD12FD21D5FC30002723EA /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD12FC21D5FC30002723EA /* OneViewController.m */; };
+		84CD12FF21D5FEC2002723EA /* 说明书 in Resources */ = {isa = PBXBuildFile; fileRef = 84CD12FE21D5FEC2002723EA /* 说明书 */; };
+		84CD130321D602F7002723EA /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD130221D602F7002723EA /* TwoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,13 @@
 		84CD12CD21D5C37B002723EA /* testAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CD12D121D5C37B002723EA /* testAnimationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testAnimationUITests.m; sourceTree = "<group>"; };
 		84CD12D321D5C37B002723EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84CD12DF21D5C418002723EA /* UIViewController+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Extend.m"; sourceTree = "<group>"; };
+		84CD12E021D5C418002723EA /* UIViewController+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Extend.h"; sourceTree = "<group>"; };
+		84CD12FB21D5FC30002723EA /* OneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OneViewController.h; sourceTree = "<group>"; };
+		84CD12FC21D5FC30002723EA /* OneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneViewController.m; sourceTree = "<group>"; };
+		84CD12FE21D5FEC2002723EA /* 说明书 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "说明书"; sourceTree = "<group>"; };
+		84CD130121D602F7002723EA /* TwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
+		84CD130221D602F7002723EA /* TwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,11 +116,16 @@
 				84CD12AE21D5C372002723EA /* AppDelegate.m */,
 				84CD12B021D5C372002723EA /* ViewController.h */,
 				84CD12B121D5C372002723EA /* ViewController.m */,
+				84CD12E021D5C418002723EA /* UIViewController+Extend.h */,
+				84CD12DF21D5C418002723EA /* UIViewController+Extend.m */,
+				84CD130021D602E8002723EA /* Two */,
+				84CD12FA21D5FC20002723EA /* One */,
 				84CD12B321D5C372002723EA /* Main.storyboard */,
 				84CD12B621D5C37B002723EA /* Assets.xcassets */,
 				84CD12B821D5C37B002723EA /* LaunchScreen.storyboard */,
 				84CD12BB21D5C37B002723EA /* Info.plist */,
 				84CD12BC21D5C37B002723EA /* main.m */,
+				84CD12FE21D5FEC2002723EA /* 说明书 */,
 			);
 			path = testAnimation;
 			sourceTree = "<group>";
@@ -130,6 +146,24 @@
 				84CD12D321D5C37B002723EA /* Info.plist */,
 			);
 			path = testAnimationUITests;
+			sourceTree = "<group>";
+		};
+		84CD12FA21D5FC20002723EA /* One */ = {
+			isa = PBXGroup;
+			children = (
+				84CD12FB21D5FC30002723EA /* OneViewController.h */,
+				84CD12FC21D5FC30002723EA /* OneViewController.m */,
+			);
+			path = One;
+			sourceTree = "<group>";
+		};
+		84CD130021D602E8002723EA /* Two */ = {
+			isa = PBXGroup;
+			children = (
+				84CD130121D602F7002723EA /* TwoViewController.h */,
+				84CD130221D602F7002723EA /* TwoViewController.m */,
+			);
+			path = Two;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84CD12FF21D5FEC2002723EA /* 说明书 in Resources */,
 				84CD12BA21D5C37B002723EA /* LaunchScreen.storyboard in Resources */,
 				84CD12B721D5C37B002723EA /* Assets.xcassets in Resources */,
 				84CD12B521D5C372002723EA /* Main.storyboard in Resources */,
@@ -262,7 +297,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84CD12E121D5C418002723EA /* UIViewController+Extend.m in Sources */,
+				84CD12FD21D5FC30002723EA /* OneViewController.m in Sources */,
 				84CD12B221D5C372002723EA /* ViewController.m in Sources */,
+				84CD130321D602F7002723EA /* TwoViewController.m in Sources */,
 				84CD12BD21D5C37B002723EA /* main.m in Sources */,
 				84CD12AF21D5C372002723EA /* AppDelegate.m in Sources */,
 			);
